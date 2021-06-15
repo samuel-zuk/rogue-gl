@@ -1,4 +1,4 @@
-CC=gcc
+CC=g++
 CFLAGS=-g -Wall -I include
 LFLAGS=-lglfw -lGL -lX11 -lpthread -lXrandr -lXi -ldl
 OBJ=main.o glad.o
@@ -7,8 +7,8 @@ EXE=main
 $(EXE): $(OBJ)
 	$(CC) $(CFLAGS) -o $(EXE) $(OBJ) $(LFLAGS)
 
-main.o: main.c
-	$(CC) $(CFLAGS) -c main.c
+main.o: main.cpp
+	$(CC) $(CFLAGS) -c main.cpp
 
 glad.o: src/glad.c
 	$(CC) $(CFLAGS) -c src/glad.c
