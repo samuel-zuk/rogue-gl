@@ -1,6 +1,7 @@
 #include "fighter.hpp"
 
 Player::Player() {
+    /* Roll stats */
     lvl = 1;
     exp = 0;
     hp_max = 12;

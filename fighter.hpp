@@ -9,6 +9,7 @@ class Fighter {
 class Player : public Fighter {
     private:
         std::vector<Item> inventory; 
+        int gold;
     public:
         Player();
 };
